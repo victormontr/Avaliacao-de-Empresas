@@ -1,0 +1,4068 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20251.25.0415.1018                               -->
+<workbook original-version='18.1' source-build='2025.1.1 (20251.25.0415.1018)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location id='IndicadoresdeRentabilidadePETR2017-2014' path='/workbooks' revision='1.3' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Base Tableau (Avaliação Petrobras)' inline='true' name='federated.1t7nn5301rrlx8142cyyk09nt0zm' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Avaliação Petrobras' name='excel-direct.1iqj4650m925nw1fmf4d708rpjr7'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='G:/My Drive/Faculdade/5 Periodo/Finanças Empresariais II/Trabalhos/Avaliação de Empresas/Avaliação Petrobras.xlsx' interpretationMode='0' password='' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.1iqj4650m925nw1fmf4d708rpjr7' name='Base Tableau' table='[&apos;Base Tableau$&apos;]' type='table'>
+          <columns gridOrigin='B2:T10:no:B2:T10:0' header='yes' lost='0' outcome='6' processed='152'>
+            <column datatype='date' date-parse-format='yyyy' name='Ano' ordinal='0' />
+            <column datatype='real' name='MLB' ordinal='1' />
+            <column datatype='real' name='MLO' ordinal='2' />
+            <column datatype='real' name='MLL' ordinal='3' />
+            <column datatype='real' name='ROE' ordinal='4' />
+            <column datatype='real' name='ROI' ordinal='5' />
+            <column datatype='real' name='EAT)' ordinal='6' />
+            <column datatype='real' name='D/E' ordinal='7' />
+            <column datatype='real' name='ELP/AT' ordinal='8' />
+            <column datatype='real' name='ICJ' ordinal='9' />
+            <column datatype='real' name='PMC' ordinal='10' />
+            <column datatype='real' name='PMP' ordinal='11' />
+            <column datatype='real' name='GE' ordinal='12' />
+            <column datatype='real' name='PME' ordinal='13' />
+            <column datatype='real' name='ILC' ordinal='14' />
+            <column datatype='real' name='ILS' ordinal='15' />
+            <column datatype='integer' name='CDG' ordinal='16' />
+            <column datatype='integer' name='NCG' ordinal='17' />
+            <column datatype='integer' name='T' ordinal='18' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Base Tableau]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>2</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;B2:T10:no:B2:T10:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ano</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Ano]</local-name>
+            <parent-name>[Base Tableau]</parent-name>
+            <remote-alias>Ano</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <object-id>[Base Tableau_019E617F2CD94660B89556A226B8FC51]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MLB</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[MLB]</local-name>
+            <parent-name>[Base Tableau]</parent-name>
+            <remote-alias>MLB</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Base Tableau_019E617F2CD94660B89556A226B8FC51]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MLO</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[MLO]</local-name>
+            <parent-name>[Base Tableau]</parent-name>
+            <remote-alias>MLO</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Base Tableau_019E617F2CD94660B89556A226B8FC51]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MLL</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[MLL]</local-name>
+            <parent-name>[Base Tableau]</parent-name>
+            <remote-alias>MLL</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Base Tableau_019E617F2CD94660B89556A226B8FC51]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ROE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ROE]</local-name>
+            <parent-name>[Base Tableau]</parent-name>
+            <remote-alias>ROE</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Base Tableau_019E617F2CD94660B89556A226B8FC51]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ROI</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ROI]</local-name>
+            <parent-name>[Base Tableau]</parent-name>
+            <remote-alias>ROI</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Base Tableau_019E617F2CD94660B89556A226B8FC51]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EAT)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[EAT)]</local-name>
+            <parent-name>[Base Tableau]</parent-name>
+            <remote-alias>EAT)</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Base Tableau_019E617F2CD94660B89556A226B8FC51]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>D/E</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[D/E]</local-name>
+            <parent-name>[Base Tableau]</parent-name>
+            <remote-alias>D/E</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Base Tableau_019E617F2CD94660B89556A226B8FC51]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ELP/AT</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ELP/AT]</local-name>
+            <parent-name>[Base Tableau]</parent-name>
+            <remote-alias>ELP/AT</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Base Tableau_019E617F2CD94660B89556A226B8FC51]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ICJ</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ICJ]</local-name>
+            <parent-name>[Base Tableau]</parent-name>
+            <remote-alias>ICJ</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Base Tableau_019E617F2CD94660B89556A226B8FC51]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PMC</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PMC]</local-name>
+            <parent-name>[Base Tableau]</parent-name>
+            <remote-alias>PMC</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Base Tableau_019E617F2CD94660B89556A226B8FC51]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PMP</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PMP]</local-name>
+            <parent-name>[Base Tableau]</parent-name>
+            <remote-alias>PMP</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Base Tableau_019E617F2CD94660B89556A226B8FC51]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[GE]</local-name>
+            <parent-name>[Base Tableau]</parent-name>
+            <remote-alias>GE</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Base Tableau_019E617F2CD94660B89556A226B8FC51]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PME</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PME]</local-name>
+            <parent-name>[Base Tableau]</parent-name>
+            <remote-alias>PME</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Base Tableau_019E617F2CD94660B89556A226B8FC51]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ILC</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ILC]</local-name>
+            <parent-name>[Base Tableau]</parent-name>
+            <remote-alias>ILC</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Base Tableau_019E617F2CD94660B89556A226B8FC51]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ILS</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ILS]</local-name>
+            <parent-name>[Base Tableau]</parent-name>
+            <remote-alias>ILS</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Base Tableau_019E617F2CD94660B89556A226B8FC51]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CDG</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CDG]</local-name>
+            <parent-name>[Base Tableau]</parent-name>
+            <remote-alias>CDG</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Base Tableau_019E617F2CD94660B89556A226B8FC51]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NCG</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[NCG]</local-name>
+            <parent-name>[Base Tableau]</parent-name>
+            <remote-alias>NCG</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Base Tableau_019E617F2CD94660B89556A226B8FC51]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>T</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[T]</local-name>
+            <parent-name>[Base Tableau]</parent-name>
+            <remote-alias>T</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Base Tableau_019E617F2CD94660B89556A226B8FC51]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='real' default-format='p0.00%' name='[D/E]' role='measure' type='quantitative' />
+      <column caption='EAT' datatype='real' default-format='p0.00%' name='[EAT)]' role='measure' type='quantitative' />
+      <column datatype='real' default-format='p0.00%' name='[ELP/AT]' role='measure' type='quantitative' />
+      <column datatype='real' default-format='n#,##0.00;-#,##0.00' name='[GE]' role='measure' type='quantitative' />
+      <column datatype='real' default-format='n#,##0.00;-#,##0.00' name='[ILC]' role='measure' type='quantitative' />
+      <column datatype='real' default-format='n#,##0.00;-#,##0.00' name='[ILS]' role='measure' type='quantitative' />
+      <column datatype='real' default-format='p0.00%' name='[MLB]' role='measure' type='quantitative' />
+      <column datatype='real' default-format='p0.00%' name='[MLL]' role='measure' type='quantitative' />
+      <column datatype='real' default-format='p0.00%' name='[MLO]' role='measure' type='quantitative' />
+      <column datatype='real' default-format='p0.00%' name='[ROE]' role='measure' type='quantitative' />
+      <column datatype='real' default-format='p0.00%' name='[ROI]' role='measure' type='quantitative' />
+      <column caption='Base Tableau' datatype='table' name='[__tableau_internal_object_id__].[Base Tableau_019E617F2CD94660B89556A226B8FC51]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/victo/AppData/Local/Temp/TableauTemp/#TableauTemp_0y24cmz0k3uayp1608h2p0yoknj5.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Ano</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Ano]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Ano</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Base Tableau</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>MLB</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[MLB]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>MLB</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Base Tableau</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>MLO</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[MLO]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>MLO</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Base Tableau</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>MLL</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[MLL]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>MLL</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Base Tableau</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ROE</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[ROE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ROE</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Base Tableau</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ROI</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[ROI]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ROI</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Base Tableau</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>EAT)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[EAT)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>EAT)</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Base Tableau</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>D/E</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[D/E]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>D/E</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Base Tableau</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ELP/AT</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[ELP/AT]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ELP/AT</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Base Tableau</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ICJ</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[ICJ]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ICJ</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Base Tableau</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PMC</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[PMC]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PMC</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Base Tableau</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PMP</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[PMP]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PMP</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Base Tableau</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>GE</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[GE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>GE</remote-alias>
+              <ordinal>12</ordinal>
+              <family>Base Tableau</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PME</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[PME]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PME</remote-alias>
+              <ordinal>13</ordinal>
+              <family>Base Tableau</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ILC</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[ILC]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ILC</remote-alias>
+              <ordinal>14</ordinal>
+              <family>Base Tableau</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ILS</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[ILS]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ILS</remote-alias>
+              <ordinal>15</ordinal>
+              <family>Base Tableau</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CDG</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[CDG]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CDG</remote-alias>
+              <ordinal>16</ordinal>
+              <family>Base Tableau</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>NCG</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[NCG]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>NCG</remote-alias>
+              <ordinal>17</ordinal>
+              <family>Base Tableau</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>T</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[T]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>T</remote-alias>
+              <ordinal>18</ordinal>
+              <family>Base Tableau</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Brazil&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='Ano' />
+        <field-sort-custom-order field='Calculation_1270015105802915840' />
+        <field-sort-custom-order field='MLB' />
+        <field-sort-custom-order field='MLO' />
+        <field-sort-custom-order field='MLL' />
+        <field-sort-custom-order field='ROE' />
+        <field-sort-custom-order field='ROI' />
+        <field-sort-custom-order field='EAT)' />
+        <field-sort-custom-order field='D/E' />
+        <field-sort-custom-order field='ELP/AT' />
+        <field-sort-custom-order field='ICJ' />
+        <field-sort-custom-order field='PMC' />
+        <field-sort-custom-order field='PMP' />
+        <field-sort-custom-order field='GE' />
+        <field-sort-custom-order field='PME' />
+        <field-sort-custom-order field='ILC' />
+        <field-sort-custom-order field='ILS' />
+        <field-sort-custom-order field='CDG' />
+        <field-sort-custom-order field='NCG' />
+        <field-sort-custom-order field='T' />
+        <field-sort-custom-order field='Geometry (generated)' />
+        <field-sort-custom-order field='Latitude (generated)' />
+        <field-sort-custom-order field='Longitude (generated)' />
+        <field-sort-custom-order field=':Measure Names' />
+        <field-sort-custom-order field='Multiple Values' />
+      </field-sort-info>
+      <object-graph>
+        <objects>
+          <object caption='Base Tableau' id='Base Tableau_019E617F2CD94660B89556A226B8FC51'>
+            <properties context=''>
+              <relation connection='excel-direct.1iqj4650m925nw1fmf4d708rpjr7' name='Base Tableau' table='[&apos;Base Tableau$&apos;]' type='table'>
+                <columns gridOrigin='B2:T10:no:B2:T10:0' header='yes' lost='0' outcome='6' processed='152'>
+                  <column datatype='date' date-parse-format='yyyy' name='Ano' ordinal='0' />
+                  <column datatype='real' name='MLB' ordinal='1' />
+                  <column datatype='real' name='MLO' ordinal='2' />
+                  <column datatype='real' name='MLL' ordinal='3' />
+                  <column datatype='real' name='ROE' ordinal='4' />
+                  <column datatype='real' name='ROI' ordinal='5' />
+                  <column datatype='real' name='EAT)' ordinal='6' />
+                  <column datatype='real' name='D/E' ordinal='7' />
+                  <column datatype='real' name='ELP/AT' ordinal='8' />
+                  <column datatype='real' name='ICJ' ordinal='9' />
+                  <column datatype='real' name='PMC' ordinal='10' />
+                  <column datatype='real' name='PMP' ordinal='11' />
+                  <column datatype='real' name='GE' ordinal='12' />
+                  <column datatype='real' name='PME' ordinal='13' />
+                  <column datatype='real' name='ILC' ordinal='14' />
+                  <column datatype='real' name='ILS' ordinal='15' />
+                  <column datatype='integer' name='CDG' ordinal='16' />
+                  <column datatype='integer' name='NCG' ordinal='17' />
+                  <column datatype='integer' name='T' ordinal='18' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Evolução CDG'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='12'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Base Tableau (Avaliação Petrobras)' name='federated.1t7nn5301rrlx8142cyyk09nt0zm' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1t7nn5301rrlx8142cyyk09nt0zm'>
+            <column datatype='date' name='[Ano]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[CDG]' role='measure' type='quantitative' />
+            <column-instance column='[CDG]' derivation='Sum' name='[sum:CDG:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Ano]' derivation='Year' name='[yr:Ano:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:CDG:qk]' field-type='quantitative' max='125000' min='40000' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:CDG:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='font-size' value='8' />
+                <format attr='color' value='#000000' />
+                <format attr='font-weight' value='bold' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='1.4392818212509155' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-color' value='#d37295' />
+                <format attr='mark-markers-mode' value='all' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:CDG:qk]</rows>
+        <cols>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[yr:Ano:ok]</cols>
+      </table>
+      <simple-id uuid='{A7746864-8CDC-4A12-AA5C-BA475D4F1DE9}' />
+    </worksheet>
+    <worksheet name='Evolução E/D'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='12'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Base Tableau (Avaliação Petrobras)' name='federated.1t7nn5301rrlx8142cyyk09nt0zm' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1t7nn5301rrlx8142cyyk09nt0zm'>
+            <column datatype='date' name='[Ano]' role='dimension' type='ordinal' />
+            <column datatype='real' default-format='p0.00%' name='[D/E]' role='measure' type='quantitative' />
+            <column-instance column='[D/E]' derivation='Sum' name='[sum:D/E:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Ano]' derivation='Year' name='[yr:Ano:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:D/E:qk]' field-type='quantitative' max='1.15' min='0.3' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:D/E:qk]' value='p0%' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:D/E:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='font-size' value='8' />
+                <format attr='color' value='#000000' />
+                <format attr='font-weight' value='bold' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='1.4392818212509155' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-color' value='#59a14f' />
+                <format attr='mark-markers-mode' value='all' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:D/E:qk]</rows>
+        <cols>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[yr:Ano:ok]</cols>
+        <mark-labels>
+          <mark-label id='3'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[yr:Ano:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:D/E:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:D/E:qk]</field>
+                  <field>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[yr:Ano:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1.0271291017733089</value>
+                <value>2017</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='43' y='10' />
+          </mark-label>
+          <mark-label id='4'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[yr:Ano:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:D/E:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:D/E:qk]</field>
+                  <field>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[yr:Ano:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>0.87722497116839426</value>
+                <value>2018</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='-23' y='-11' />
+          </mark-label>
+          <mark-label id='5'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[yr:Ano:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:D/E:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:D/E:qk]</field>
+                  <field>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[yr:Ano:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>0.49096088856478937</value>
+                <value>2024</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='0' y='-15' />
+          </mark-label>
+          <mark-label id='6'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[yr:Ano:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:D/E:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:D/E:qk]</field>
+                  <field>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[yr:Ano:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>0.40112465344980908</value>
+                <value>2023</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='-6' y='17' />
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{C0FF6A5D-CBB5-40B4-AD47-D123122C8BC9}' />
+    </worksheet>
+    <worksheet name='Evolução EAT'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='12'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Base Tableau (Avaliação Petrobras)' name='federated.1t7nn5301rrlx8142cyyk09nt0zm' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1t7nn5301rrlx8142cyyk09nt0zm'>
+            <column datatype='date' name='[Ano]' role='dimension' type='ordinal' />
+            <column caption='EAT' datatype='real' default-format='p0.00%' name='[EAT)]' role='measure' type='quantitative' />
+            <column-instance column='[EAT)]' derivation='Sum' name='[sum:EAT):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Ano]' derivation='Year' name='[yr:Ano:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:EAT):qk]' field-type='quantitative' max='0.75' min='0.55' range-type='fixed' scope='rows' type='space' />
+            <format attr='width' field='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:EAT):qk]' value='80' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:EAT):qk]' value='p0%' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:EAT):qk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='font-size' value='8' />
+                <format attr='color' value='#000000' />
+                <format attr='font-weight' value='bold' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='1.4392818212509155' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-color' value='#59a14f' />
+                <format attr='mark-markers-mode' value='all' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:EAT):qk]</rows>
+        <cols>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[yr:Ano:ok]</cols>
+      </table>
+      <simple-id uuid='{7060ECE5-942F-4DD9-A81D-B95331159F4E}' />
+    </worksheet>
+    <worksheet name='Evolução ELP/AT'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='12'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Base Tableau (Avaliação Petrobras)' name='federated.1t7nn5301rrlx8142cyyk09nt0zm' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1t7nn5301rrlx8142cyyk09nt0zm'>
+            <column datatype='date' name='[Ano]' role='dimension' type='ordinal' />
+            <column datatype='real' default-format='p0.00%' name='[ELP/AT]' role='measure' type='quantitative' />
+            <column-instance column='[ELP/AT]' derivation='Sum' name='[sum:ELP/AT:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Ano]' derivation='Year' name='[yr:Ano:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:ELP/AT:qk]' field-type='quantitative' max='0.61' min='0.43' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:ELP/AT:qk]' value='p0%' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:ELP/AT:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='font-size' value='8' />
+                <format attr='color' value='#000000' />
+                <format attr='font-weight' value='bold' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='1.4392818212509155' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-color' value='#59a14f' />
+                <format attr='mark-markers-mode' value='all' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:ELP/AT:qk]</rows>
+        <cols>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[yr:Ano:ok]</cols>
+        <mark-labels>
+          <mark-label id='3'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[yr:Ano:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:ELP/AT:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:ELP/AT:qk]</field>
+                  <field>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[yr:Ano:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>0.54686207172436418</value>
+                <value>2020</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='40' y='6' />
+          </mark-label>
+          <mark-label id='4'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[yr:Ano:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:ELP/AT:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:ELP/AT:qk]</field>
+                  <field>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[yr:Ano:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>0.55153448501151714</value>
+                <value>2019</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='5' y='15' />
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{B7F35F9B-BA28-4D6C-ABAD-5D0AACDA963F}' />
+    </worksheet>
+    <worksheet name='Evolução GE'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='12'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Base Tableau (Avaliação Petrobras)' name='federated.1t7nn5301rrlx8142cyyk09nt0zm' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1t7nn5301rrlx8142cyyk09nt0zm'>
+            <column datatype='date' name='[Ano]' role='dimension' type='ordinal' />
+            <column datatype='real' default-format='n#,##0.00;-#,##0.00' name='[GE]' role='measure' type='quantitative' />
+            <column-instance column='[GE]' derivation='Sum' name='[sum:GE:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Ano]' derivation='Year' name='[yr:Ano:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:GE:qk]' field-type='quantitative' max='15.0' min='2.0' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:GE:qk]' value='n#,##0;-#,##0' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:GE:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='font-size' value='8' />
+                <format attr='color' value='#000000' />
+                <format attr='font-weight' value='bold' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='1.4392818212509155' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-color' value='#4e79a7' />
+                <format attr='mark-markers-mode' value='all' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:GE:qk]</rows>
+        <cols>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[yr:Ano:ok]</cols>
+        <mark-labels>
+          <mark-label id='4'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[yr:Ano:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:GE:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:GE:qk]</field>
+                  <field>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[yr:Ano:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>13.681848937003668</value>
+                <value>2017</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='29' y='7' />
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{9EB70CB5-3464-41C8-AD66-00A64760E293}' />
+    </worksheet>
+    <worksheet name='Evolução ICJ'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='12'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Base Tableau (Avaliação Petrobras)' name='federated.1t7nn5301rrlx8142cyyk09nt0zm' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1t7nn5301rrlx8142cyyk09nt0zm'>
+            <column datatype='date' name='[Ano]' role='dimension' type='ordinal' />
+            <column datatype='real' name='[ICJ]' role='measure' type='quantitative' />
+            <column-instance column='[ICJ]' derivation='Sum' name='[sum:ICJ:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Ano]' derivation='Year' name='[yr:Ano:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:ICJ:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='font-size' value='8' />
+                <format attr='color' value='#000000' />
+                <format attr='font-weight' value='bold' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='1.4392818212509155' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-color' value='#59a14f' />
+                <format attr='mark-markers-mode' value='all' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:ICJ:qk]</rows>
+        <cols>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[yr:Ano:ok]</cols>
+        <mark-labels>
+          <mark-label id='3'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[yr:Ano:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:ICJ:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:ICJ:qk]</field>
+                  <field>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[yr:Ano:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>16.239689578713968</value>
+                <value>2022</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='-32' y='-2' />
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{081563C7-F4C9-4351-A0A5-ED683DEDCB0C}' />
+    </worksheet>
+    <worksheet name='Evolução ILC'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='12'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Base Tableau (Avaliação Petrobras)' name='federated.1t7nn5301rrlx8142cyyk09nt0zm' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1t7nn5301rrlx8142cyyk09nt0zm'>
+            <column datatype='date' name='[Ano]' role='dimension' type='ordinal' />
+            <column datatype='real' default-format='n#,##0.00;-#,##0.00' name='[ILC]' role='measure' type='quantitative' />
+            <column-instance column='[ILC]' derivation='Sum' name='[sum:ILC:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Ano]' derivation='Year' name='[yr:Ano:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:ILC:qk]' field-type='quantitative' max='2.0' min='0.4' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:ILC:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='font-size' value='8' />
+                <format attr='color' value='#000000' />
+                <format attr='font-weight' value='bold' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='1.4392818212509155' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-color' value='#ff0000' />
+                <format attr='mark-markers-mode' value='all' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:ILC:qk]</rows>
+        <cols>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[yr:Ano:ok]</cols>
+      </table>
+      <simple-id uuid='{38280E78-C7A7-4A6E-A13B-8B934F0D6F38}' />
+    </worksheet>
+    <worksheet name='Evolução ILS'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='12'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Base Tableau (Avaliação Petrobras)' name='federated.1t7nn5301rrlx8142cyyk09nt0zm' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1t7nn5301rrlx8142cyyk09nt0zm'>
+            <column datatype='date' name='[Ano]' role='dimension' type='ordinal' />
+            <column datatype='real' default-format='n#,##0.00;-#,##0.00' name='[ILS]' role='measure' type='quantitative' />
+            <column-instance column='[ILS]' derivation='Sum' name='[sum:ILS:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Ano]' derivation='Year' name='[yr:Ano:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:ILS:qk]' field-type='quantitative' max='1.7' min='0.3' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:ILS:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='font-size' value='8' />
+                <format attr='color' value='#000000' />
+                <format attr='font-weight' value='bold' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='1.4392818212509155' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-color' value='#ff0000' />
+                <format attr='mark-markers-mode' value='all' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:ILS:qk]</rows>
+        <cols>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[yr:Ano:ok]</cols>
+      </table>
+      <simple-id uuid='{0D6C4BCC-71DC-4AC3-A9ED-F364628C4FCB}' />
+    </worksheet>
+    <worksheet name='Evolução MLB'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='12'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Base Tableau (Avaliação Petrobras)' name='federated.1t7nn5301rrlx8142cyyk09nt0zm' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1t7nn5301rrlx8142cyyk09nt0zm'>
+            <column datatype='date' name='[Ano]' role='dimension' type='ordinal' />
+            <column datatype='real' default-format='p0.00%' name='[MLB]' role='measure' type='quantitative' />
+            <column-instance column='[MLB]' derivation='Sum' name='[sum:MLB:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Ano]' derivation='Year' name='[yr:Ano:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:MLB:qk]' field-type='quantitative' major-origin='0.0' major-spacing='0.10000000000000001' max='0.59999999999999998' min='0.25' range-type='fixed' scope='rows' type='space' />
+            <format attr='width' field='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:MLB:qk]' value='72' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:MLB:qk]' value='p0%' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:MLB:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='font-size' value='8' />
+                <format attr='font-weight' value='bold' />
+                <format attr='text-decoration' value='none' />
+                <format attr='color' value='#000000' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='1.4612706899642944' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-color' value='#f28e2b' />
+                <format attr='mark-markers-mode' value='all' />
+                <format attr='mark-transparency' value='255' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:MLB:qk]</rows>
+        <cols>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[yr:Ano:ok]</cols>
+      </table>
+      <simple-id uuid='{DD1917D6-1253-497E-8916-0148C801300B}' />
+    </worksheet>
+    <worksheet name='Evolução MLL'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='12'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Base Tableau (Avaliação Petrobras)' name='federated.1t7nn5301rrlx8142cyyk09nt0zm' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1t7nn5301rrlx8142cyyk09nt0zm'>
+            <column datatype='date' name='[Ano]' role='dimension' type='ordinal' />
+            <column datatype='real' default-format='p0.00%' name='[MLL]' role='measure' type='quantitative' />
+            <column-instance column='[MLL]' derivation='Sum' name='[sum:MLL:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Ano]' derivation='Year' name='[yr:Ano:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:MLL:qk]' field-type='quantitative' max='0.45814599819225205' min='-0.081485853595867325' range-type='fixed' scope='rows' type='space' />
+            <format attr='width' field='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:MLL:qk]' value='76' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:MLL:qk]' value='p0%' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:MLL:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='font-size' value='8' />
+                <format attr='color' value='#000000' />
+                <format attr='font-weight' value='bold' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='1.4392818212509155' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-color' value='#f28e2b' />
+                <format attr='mark-markers-mode' value='all' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:MLL:qk]</rows>
+        <cols>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[yr:Ano:ok]</cols>
+        <mark-labels>
+          <mark-label id='0'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[yr:Ano:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:MLL:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:MLL:qk]</field>
+                  <field>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[yr:Ano:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>0.0013288919438128976</value>
+                <value>2017</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='33' y='-3' />
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{323FF413-8415-4115-B9C5-2BF31014547D}' />
+    </worksheet>
+    <worksheet name='Evolução MLO'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='12'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Base Tableau (Avaliação Petrobras)' name='federated.1t7nn5301rrlx8142cyyk09nt0zm' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1t7nn5301rrlx8142cyyk09nt0zm'>
+            <column datatype='date' name='[Ano]' role='dimension' type='ordinal' />
+            <column datatype='real' default-format='p0.00%' name='[MLO]' role='measure' type='quantitative' />
+            <column-instance column='[MLO]' derivation='Sum' name='[sum:MLO:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Ano]' derivation='Year' name='[yr:Ano:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:MLO:qk]' field-type='quantitative' max='0.67165536437497075' min='-0.098121439925650644' range-type='fixed' scope='rows' type='space' />
+            <format attr='width' field='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:MLO:qk]' value='72' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' data-class='subtotal' field='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:MLO:qk]' value='p0%' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:MLO:qk]' value='p0%' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:MLO:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='font-size' value='8' />
+                <format attr='color' value='#000000' />
+                <format attr='font-weight' value='bold' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='1.4392818212509155' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-color' value='#f28e2b' />
+                <format attr='mark-markers-mode' value='all' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:MLO:qk]</rows>
+        <cols>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[yr:Ano:ok]</cols>
+      </table>
+      <simple-id uuid='{A9D04393-2DD9-4036-94B7-6EADF1AAE566}' />
+    </worksheet>
+    <worksheet name='Evolução NCG'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='12'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Base Tableau (Avaliação Petrobras)' name='federated.1t7nn5301rrlx8142cyyk09nt0zm' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1t7nn5301rrlx8142cyyk09nt0zm'>
+            <column datatype='date' name='[Ano]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[NCG]' role='measure' type='quantitative' />
+            <column-instance column='[NCG]' derivation='Sum' name='[sum:NCG:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Ano]' derivation='Year' name='[yr:Ano:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:NCG:qk]' field-type='quantitative' max='45000' min='0' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:NCG:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='font-size' value='8' />
+                <format attr='color' value='#000000' />
+                <format attr='font-weight' value='bold' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='1.4392818212509155' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-color' value='#d37295' />
+                <format attr='mark-markers-mode' value='all' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:NCG:qk]</rows>
+        <cols>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[yr:Ano:ok]</cols>
+      </table>
+      <simple-id uuid='{4C6A057E-8B89-4B56-A917-2C67FD54B109}' />
+    </worksheet>
+    <worksheet name='Evolução PMC'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='12'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Base Tableau (Avaliação Petrobras)' name='federated.1t7nn5301rrlx8142cyyk09nt0zm' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1t7nn5301rrlx8142cyyk09nt0zm'>
+            <column datatype='date' name='[Ano]' role='dimension' type='ordinal' />
+            <column datatype='real' name='[PMC]' role='measure' type='quantitative' />
+            <column-instance column='[PMC]' derivation='Sum' name='[sum:PMC:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Ano]' derivation='Year' name='[yr:Ano:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:PMC:qk]' field-type='quantitative' max='35.0' min='12.0' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:PMC:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='font-size' value='8' />
+                <format attr='color' value='#000000' />
+                <format attr='font-weight' value='bold' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='1.4392818212509155' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-color' value='#4e79a7' />
+                <format attr='mark-markers-mode' value='all' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:PMC:qk]</rows>
+        <cols>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[yr:Ano:ok]</cols>
+      </table>
+      <simple-id uuid='{FD51EE78-028D-43FD-B3E2-B7534424EE42}' />
+    </worksheet>
+    <worksheet name='Evolução PME'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='12'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Base Tableau (Avaliação Petrobras)' name='federated.1t7nn5301rrlx8142cyyk09nt0zm' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1t7nn5301rrlx8142cyyk09nt0zm'>
+            <column datatype='date' name='[Ano]' role='dimension' type='ordinal' />
+            <column datatype='real' name='[PME]' role='measure' type='quantitative' />
+            <column-instance column='[PME]' derivation='Sum' name='[sum:PME:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Ano]' derivation='Year' name='[yr:Ano:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:PME:qk]' field-type='quantitative' max='80.0' min='20.0' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:PME:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='font-size' value='8' />
+                <format attr='color' value='#000000' />
+                <format attr='font-weight' value='bold' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='1.4392818212509155' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-color' value='#4e79a7' />
+                <format attr='mark-markers-mode' value='all' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:PME:qk]</rows>
+        <cols>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[yr:Ano:ok]</cols>
+        <mark-labels>
+          <mark-label id='4'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[yr:Ano:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:PME:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:PME:qk]</field>
+                  <field>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[yr:Ano:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>75.969535538495819</value>
+                <value>2020</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='30' y='1' />
+          </mark-label>
+          <mark-label id='5'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[yr:Ano:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:PME:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:PME:qk]</field>
+                  <field>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[yr:Ano:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>26.312233211868818</value>
+                <value>2017</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='36' y='4' />
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{0651A576-D1E1-4B4C-9A73-6C6CE3232748}' />
+    </worksheet>
+    <worksheet name='Evolução PMP'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='12'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Base Tableau (Avaliação Petrobras)' name='federated.1t7nn5301rrlx8142cyyk09nt0zm' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1t7nn5301rrlx8142cyyk09nt0zm'>
+            <column datatype='date' name='[Ano]' role='dimension' type='ordinal' />
+            <column datatype='real' name='[PMP]' role='measure' type='quantitative' />
+            <column-instance column='[PMP]' derivation='Sum' name='[sum:PMP:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Ano]' derivation='Year' name='[yr:Ano:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:PMP:qk]' field-type='quantitative' max='95.0' min='25.0' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:PMP:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='font-size' value='8' />
+                <format attr='color' value='#000000' />
+                <format attr='font-weight' value='bold' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='1.4392818212509155' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-color' value='#4e79a7' />
+                <format attr='mark-markers-mode' value='all' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:PMP:qk]</rows>
+        <cols>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[yr:Ano:ok]</cols>
+      </table>
+      <simple-id uuid='{04501F22-4F6B-4916-B236-BFAA36D66E07}' />
+    </worksheet>
+    <worksheet name='Evolução ROE'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='12'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Base Tableau (Avaliação Petrobras)' name='federated.1t7nn5301rrlx8142cyyk09nt0zm' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1t7nn5301rrlx8142cyyk09nt0zm'>
+            <column datatype='date' name='[Ano]' role='dimension' type='ordinal' />
+            <column datatype='real' default-format='p0.00%' name='[ROE]' role='measure' type='quantitative' />
+            <column-instance column='[ROE]' derivation='Sum' name='[sum:ROE:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Ano]' derivation='Year' name='[yr:Ano:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:ROE:qk]' field-type='quantitative' max='0.55000000000000004' min='-0.02' range-type='fixed' scope='rows' type='space' />
+            <format attr='width' field='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:ROE:qk]' value='72' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:ROE:qk]' value='p0%' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:ROE:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='font-size' value='8' />
+                <format attr='color' value='#000000' />
+                <format attr='font-weight' value='bold' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='1.4392818212509155' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-color' value='#f28e2b' />
+                <format attr='mark-markers-mode' value='all' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:ROE:qk]</rows>
+        <cols>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[yr:Ano:ok]</cols>
+        <mark-labels>
+          <mark-label id='0'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[yr:Ano:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:ROE:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:ROE:qk]</field>
+                  <field>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[yr:Ano:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>0.0013983212726578118</value>
+                <value>2017</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='-5' y='16' />
+          </mark-label>
+          <mark-label id='1'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[yr:Ano:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:ROE:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:ROE:qk]</field>
+                  <field>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[yr:Ano:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>0.020073919331512133</value>
+                <value>2020</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='33' y='1' />
+          </mark-label>
+          <mark-label id='2'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[yr:Ano:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:ROE:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:ROE:qk]</field>
+                  <field>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[yr:Ano:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>0.51869588484707108</value>
+                <value>2022</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='-40' y='-2' />
+          </mark-label>
+          <mark-label id='3'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[yr:Ano:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:ROE:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:ROE:qk]</field>
+                  <field>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[yr:Ano:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>0.094158557961226338</value>
+                <value>2018</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='16' y='-15' />
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{F90B05FD-E95A-4523-83EA-D1636E8C1112}' />
+    </worksheet>
+    <worksheet name='Evolução ROI'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='12'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Base Tableau (Avaliação Petrobras)' name='federated.1t7nn5301rrlx8142cyyk09nt0zm' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1t7nn5301rrlx8142cyyk09nt0zm'>
+            <column datatype='date' name='[Ano]' role='dimension' type='ordinal' />
+            <column datatype='real' default-format='p0.00%' name='[ROI]' role='measure' type='quantitative' />
+            <column-instance column='[ROI]' derivation='Sum' name='[sum:ROI:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Ano]' derivation='Year' name='[yr:Ano:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:ROI:qk]' field-type='quantitative' max='0.22' min='-0.01' range-type='fixed' scope='rows' type='space' />
+            <format attr='width' field='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:ROI:qk]' value='76' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:ROI:qk]' value='p0%' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:ROI:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='font-size' value='8' />
+                <format attr='color' value='#000000' />
+                <format attr='font-weight' value='bold' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='1.4392818212509155' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-color' value='#f28e2b' />
+                <format attr='mark-markers-mode' value='all' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:ROI:qk]</rows>
+        <cols>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[yr:Ano:ok]</cols>
+        <mark-labels>
+          <mark-label id='0'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[yr:Ano:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:ROI:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:ROI:qk]</field>
+                  <field>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[yr:Ano:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>0.00045338929544265586</value>
+                <value>2017</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='-3' y='15' />
+          </mark-label>
+          <mark-label id='1'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[yr:Ano:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:ROI:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:ROI:qk]</field>
+                  <field>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[yr:Ano:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>0.0063255821490167804</value>
+                <value>2020</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='34' y='4' />
+          </mark-label>
+          <mark-label id='2'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[yr:Ano:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:ROI:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:ROI:qk]</field>
+                  <field>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[yr:Ano:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>0.031027121129890187</value>
+                <value>2018</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='18' y='-14' />
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{B1B76D4C-8D3E-461E-A139-FF99B304574C}' />
+    </worksheet>
+    <worksheet name='Evolução T'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='12'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Base Tableau (Avaliação Petrobras)' name='federated.1t7nn5301rrlx8142cyyk09nt0zm' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1t7nn5301rrlx8142cyyk09nt0zm'>
+            <column datatype='date' name='[Ano]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[T]' role='measure' type='quantitative' />
+            <column-instance column='[T]' derivation='Sum' name='[sum:T:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Ano]' derivation='Year' name='[yr:Ano:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:T:qk]' field-type='quantitative' max='86000' min='25000' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:T:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='font-size' value='8' />
+                <format attr='color' value='#000000' />
+                <format attr='font-weight' value='bold' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='1.4392818212509155' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-color' value='#d37295' />
+                <format attr='mark-markers-mode' value='all' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:T:qk]</rows>
+        <cols>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[yr:Ano:ok]</cols>
+      </table>
+      <simple-id uuid='{DA7C0447-5D1A-4375-99B6-A482171BC9B3}' />
+    </worksheet>
+    <worksheet name='Tabela Ind. Atividade'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Base Tableau (Avaliação Petrobras)' name='federated.1t7nn5301rrlx8142cyyk09nt0zm' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1t7nn5301rrlx8142cyyk09nt0zm'>
+            <column datatype='date' name='[Ano]' role='dimension' type='ordinal' />
+            <column datatype='real' default-format='n#,##0.00;-#,##0.00' name='[GE]' role='measure' type='quantitative' />
+            <column datatype='real' name='[PMC]' role='measure' type='quantitative' />
+            <column datatype='real' name='[PME]' role='measure' type='quantitative' />
+            <column datatype='real' name='[PMP]' role='measure' type='quantitative' />
+            <column-instance column='[GE]' derivation='Sum' name='[sum:GE:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[PMC]' derivation='Sum' name='[sum:PMC:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[PME]' derivation='Sum' name='[sum:PME:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[PMP]' derivation='Sum' name='[sum:PMP:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Ano]' derivation='Year' name='[yr:Ano:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[:Measure Names]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:GE:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:PMC:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:PME:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:PMP:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:PMC:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:PMP:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:GE:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:PME:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='color' value='#1b1b1b' />
+            <format attr='text-align' field='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[:Measure Names]' value='center' />
+            <format attr='wrap' field='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[:Measure Names]' value='off' />
+            <format attr='vertical-align' field='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[Multiple Values]' value='auto' />
+            <format attr='text-align' field='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[Multiple Values]' value='center' />
+            <format attr='text-orientation' field='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[Multiple Values]' value='0' />
+            <format attr='wrap' field='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[Multiple Values]' value='auto' />
+            <format attr='color' field='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[Multiple Values]' value='#000000' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='background-color' field='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[:Measure Names]' value='#ffffff' />
+            <format attr='text-align' data-class='subtotal' field='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[:Measure Names]' value='center' />
+            <format attr='color' data-class='total' field='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[:Measure Names]' value='#000000' />
+            <format attr='color' data-class='subtotal' field='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[:Measure Names]' value='#000000' />
+            <format attr='band-color' scope='cols' value='#ffffff' />
+            <format attr='band-color' scope='rows' value='#ddebf0' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' field='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[:Measure Names]' value='center' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='rows' value='#ddebf0' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='band-size' scope='cols' value='1' />
+            <format attr='background-color' value='#ffffff' />
+            <format attr='band-size' scope='rows' value='1' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[:Measure Names]</rows>
+        <cols>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[yr:Ano:ok]</cols>
+      </table>
+      <simple-id uuid='{A4EDC4B9-35A8-4F05-8B48-723D46049928}' />
+    </worksheet>
+    <worksheet name='Tabela Ind. Endividamento'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Base Tableau (Avaliação Petrobras)' name='federated.1t7nn5301rrlx8142cyyk09nt0zm' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1t7nn5301rrlx8142cyyk09nt0zm'>
+            <column datatype='date' name='[Ano]' role='dimension' type='ordinal' />
+            <column datatype='real' default-format='p0.00%' name='[D/E]' role='measure' type='quantitative' />
+            <column caption='EAT' datatype='real' default-format='p0.00%' name='[EAT)]' role='measure' type='quantitative' />
+            <column datatype='real' default-format='p0.00%' name='[ELP/AT]' role='measure' type='quantitative' />
+            <column datatype='real' name='[ICJ]' role='measure' type='quantitative' />
+            <column-instance column='[D/E]' derivation='Sum' name='[sum:D/E:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[EAT)]' derivation='Sum' name='[sum:EAT):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[ELP/AT]' derivation='Sum' name='[sum:ELP/AT:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[ICJ]' derivation='Sum' name='[sum:ICJ:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Ano]' derivation='Year' name='[yr:Ano:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[:Measure Names]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:D/E:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:EAT):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:ELP/AT:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:ICJ:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='color' value='#1b1b1b' />
+            <format attr='text-align' field='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[:Measure Names]' value='center' />
+            <format attr='wrap' field='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[:Measure Names]' value='off' />
+            <format attr='vertical-align' field='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[Multiple Values]' value='auto' />
+            <format attr='text-align' field='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[Multiple Values]' value='center' />
+            <format attr='text-orientation' field='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[Multiple Values]' value='0' />
+            <format attr='wrap' field='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[Multiple Values]' value='auto' />
+            <format attr='color' field='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[Multiple Values]' value='#000000' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='background-color' field='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[:Measure Names]' value='#ffffff' />
+            <format attr='text-align' data-class='subtotal' field='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[:Measure Names]' value='center' />
+            <format attr='color' data-class='total' field='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[:Measure Names]' value='#000000' />
+            <format attr='color' data-class='subtotal' field='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[:Measure Names]' value='#000000' />
+            <format attr='band-color' scope='cols' value='#ffffff' />
+            <format attr='band-color' scope='rows' value='#e8edda' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' field='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[:Measure Names]' value='center' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='rows' value='#e8edda' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='band-size' scope='cols' value='1' />
+            <format attr='background-color' value='#ffffff' />
+            <format attr='band-size' scope='rows' value='1' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[:Measure Names]</rows>
+        <cols>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[yr:Ano:ok]</cols>
+      </table>
+      <simple-id uuid='{B13FF007-B759-4EF9-8F8B-992886B322B7}' />
+    </worksheet>
+    <worksheet name='Tabela Ind. Fleuriet'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Base Tableau (Avaliação Petrobras)' name='federated.1t7nn5301rrlx8142cyyk09nt0zm' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1t7nn5301rrlx8142cyyk09nt0zm'>
+            <column datatype='date' name='[Ano]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[CDG]' role='measure' type='quantitative' />
+            <column datatype='real' default-format='n#,##0.00;-#,##0.00' name='[GE]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[NCG]' role='measure' type='quantitative' />
+            <column datatype='real' name='[PMC]' role='measure' type='quantitative' />
+            <column datatype='real' name='[PME]' role='measure' type='quantitative' />
+            <column datatype='real' name='[PMP]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[T]' role='measure' type='quantitative' />
+            <column-instance column='[CDG]' derivation='Sum' name='[sum:CDG:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[GE]' derivation='Sum' name='[sum:GE:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[NCG]' derivation='Sum' name='[sum:NCG:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[PMC]' derivation='Sum' name='[sum:PMC:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[PME]' derivation='Sum' name='[sum:PME:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[PMP]' derivation='Sum' name='[sum:PMP:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[T]' derivation='Sum' name='[sum:T:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Ano]' derivation='Year' name='[yr:Ano:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[:Measure Names]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:CDG:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:NCG:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:T:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:PMC:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:PMP:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:GE:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:PME:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[yr:Ano:ok]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:NCG:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='color' value='#1b1b1b' />
+            <format attr='text-align' field='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[:Measure Names]' value='center' />
+            <format attr='wrap' field='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[:Measure Names]' value='off' />
+            <format attr='vertical-align' field='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[Multiple Values]' value='auto' />
+            <format attr='text-align' field='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[Multiple Values]' value='center' />
+            <format attr='text-orientation' field='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[Multiple Values]' value='0' />
+            <format attr='wrap' field='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[Multiple Values]' value='auto' />
+            <format attr='color' field='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[Multiple Values]' value='#000000' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='background-color' field='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[:Measure Names]' value='#ffffff' />
+            <format attr='text-align' data-class='subtotal' field='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[:Measure Names]' value='center' />
+            <format attr='color' data-class='total' field='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[:Measure Names]' value='#000000' />
+            <format attr='color' data-class='subtotal' field='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[:Measure Names]' value='#000000' />
+            <format attr='band-color' scope='cols' value='#ffffff' />
+            <format attr='band-color' scope='rows' value='#f3ebf3' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' field='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[:Measure Names]' value='center' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='rows' value='#f3ebf3' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='band-size' scope='cols' value='1' />
+            <format attr='background-color' value='#ffffff' />
+            <format attr='band-size' scope='rows' value='1' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[:Measure Names]</rows>
+        <cols>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[yr:Ano:ok]</cols>
+      </table>
+      <simple-id uuid='{A367337F-3437-4798-BDB0-662A4341A4AC}' />
+    </worksheet>
+    <worksheet name='Tabela Ind. Liquidez'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Base Tableau (Avaliação Petrobras)' name='federated.1t7nn5301rrlx8142cyyk09nt0zm' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1t7nn5301rrlx8142cyyk09nt0zm'>
+            <column datatype='date' name='[Ano]' role='dimension' type='ordinal' />
+            <column datatype='real' default-format='n#,##0.00;-#,##0.00' name='[GE]' role='measure' type='quantitative' />
+            <column datatype='real' default-format='n#,##0.00;-#,##0.00' name='[ILC]' role='measure' type='quantitative' />
+            <column datatype='real' default-format='n#,##0.00;-#,##0.00' name='[ILS]' role='measure' type='quantitative' />
+            <column datatype='real' name='[PMC]' role='measure' type='quantitative' />
+            <column datatype='real' name='[PME]' role='measure' type='quantitative' />
+            <column datatype='real' name='[PMP]' role='measure' type='quantitative' />
+            <column-instance column='[GE]' derivation='Sum' name='[sum:GE:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[ILC]' derivation='Sum' name='[sum:ILC:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[ILS]' derivation='Sum' name='[sum:ILS:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[PMC]' derivation='Sum' name='[sum:PMC:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[PME]' derivation='Sum' name='[sum:PME:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[PMP]' derivation='Sum' name='[sum:PMP:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Ano]' derivation='Year' name='[yr:Ano:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[:Measure Names]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:ILC:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:ILS:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:PMC:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:PMP:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:GE:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:PME:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='color' value='#1b1b1b' />
+            <format attr='text-align' field='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[:Measure Names]' value='center' />
+            <format attr='wrap' field='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[:Measure Names]' value='off' />
+            <format attr='vertical-align' field='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[Multiple Values]' value='auto' />
+            <format attr='text-align' field='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[Multiple Values]' value='center' />
+            <format attr='text-orientation' field='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[Multiple Values]' value='0' />
+            <format attr='wrap' field='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[Multiple Values]' value='auto' />
+            <format attr='color' field='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[Multiple Values]' value='#000000' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='background-color' field='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[:Measure Names]' value='#ffffff' />
+            <format attr='text-align' data-class='subtotal' field='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[:Measure Names]' value='center' />
+            <format attr='color' data-class='total' field='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[:Measure Names]' value='#000000' />
+            <format attr='color' data-class='subtotal' field='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[:Measure Names]' value='#000000' />
+            <format attr='band-color' scope='cols' value='#ffffff' />
+            <format attr='band-color' scope='rows' value='#ffc6b4' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' field='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[:Measure Names]' value='center' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='rows' value='#ffc6b4' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='band-size' scope='cols' value='1' />
+            <format attr='background-color' value='#ffffff' />
+            <format attr='band-size' scope='rows' value='1' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[:Measure Names]</rows>
+        <cols>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[yr:Ano:ok]</cols>
+      </table>
+      <simple-id uuid='{0CB3C9E2-B32F-463D-AB11-88118C326A5F}' />
+    </worksheet>
+    <worksheet name='Tabela Ind. Rentabilidade'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Base Tableau (Avaliação Petrobras)' name='federated.1t7nn5301rrlx8142cyyk09nt0zm' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1t7nn5301rrlx8142cyyk09nt0zm'>
+            <column datatype='date' name='[Ano]' role='dimension' type='ordinal' />
+            <column datatype='real' default-format='p0.00%' name='[MLB]' role='measure' type='quantitative' />
+            <column datatype='real' default-format='p0.00%' name='[MLL]' role='measure' type='quantitative' />
+            <column datatype='real' default-format='p0.00%' name='[MLO]' role='measure' type='quantitative' />
+            <column datatype='real' default-format='p0.00%' name='[ROE]' role='measure' type='quantitative' />
+            <column datatype='real' default-format='p0.00%' name='[ROI]' role='measure' type='quantitative' />
+            <column-instance column='[MLB]' derivation='Sum' name='[sum:MLB:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[MLL]' derivation='Sum' name='[sum:MLL:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[MLO]' derivation='Sum' name='[sum:MLO:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[ROE]' derivation='Sum' name='[sum:ROE:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[ROI]' derivation='Sum' name='[sum:ROI:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Ano]' derivation='Year' name='[yr:Ano:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:MLB:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:MLL:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:MLO:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:ROE:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1t7nn5301rrlx8142cyyk09nt0zm].[sum:ROI:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='color' value='#1b1b1b' />
+            <format attr='text-align' field='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[:Measure Names]' value='center' />
+            <format attr='wrap' field='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[:Measure Names]' value='off' />
+            <format attr='vertical-align' field='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[Multiple Values]' value='auto' />
+            <format attr='text-align' field='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[Multiple Values]' value='center' />
+            <format attr='text-orientation' field='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[Multiple Values]' value='0' />
+            <format attr='wrap' field='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[Multiple Values]' value='auto' />
+            <format attr='color' field='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[Multiple Values]' value='#000000' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='background-color' field='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[:Measure Names]' value='#ffffff' />
+            <format attr='text-align' data-class='subtotal' field='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[:Measure Names]' value='center' />
+            <format attr='color' data-class='total' field='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[:Measure Names]' value='#000000' />
+            <format attr='color' data-class='subtotal' field='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[:Measure Names]' value='#000000' />
+            <format attr='band-color' scope='rows' value='#f5ead7' />
+            <format attr='band-color' scope='cols' value='#ffffff' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' field='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[:Measure Names]' value='center' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='rows' value='#f5ead7' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='band-size' scope='rows' value='1' />
+            <format attr='band-size' scope='cols' value='1' />
+            <format attr='background-color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1t7nn5301rrlx8142cyyk09nt0zm].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[:Measure Names]</rows>
+        <cols>[federated.1t7nn5301rrlx8142cyyk09nt0zm].[yr:Ano:ok]</cols>
+      </table>
+      <simple-id uuid='{F1208C8F-80BE-4609-9155-4F9246570571}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Atividade'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='14'>Indicadores de Atividade</run>
+            <run fontalignment='1'>Æ&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size maxheight='827' maxwidth='1169' minheight='827' minwidth='1169' preset-index='16' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='22491' id='12' param='vert' type-v2='layout-flow' w='98632' x='684' y='44256'>
+            <zone h='22491' id='10' type-v2='layout-basic' w='98632' x='684' y='44256'>
+              <zone h='22491' id='29' name='Tabela Ind. Atividade' show-title='false' w='98632' x='684' y='44256'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='4837' id='13' type-v2='title' w='98632' x='684' y='967'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='38452' id='27' name='Evolução PMP' w='49316' x='50000' y='5804'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='38452' id='28' name='Evolução PMC' w='49316' x='684' y='5804'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='32286' id='30' name='Evolução GE' w='49316' x='684' y='66747'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='32286' id='31' name='Evolução PME' w='49316' x='50000' y='66747'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontsize='14'>Indicadores de Atividade</run>
+                <run fontalignment='1'>Æ&#10;</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='1400' minheight='1400' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='35' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98066' id='34' param='vert' type-v2='layout-flow' w='98632' x='684' y='967'>
+                <zone h='4837' id='13' type-v2='title' w='98632' x='684' y='967'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='38452' id='28' is-fixed='true' name='Evolução PMC' w='49316' x='684' y='5804'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='38452' id='27' is-fixed='true' name='Evolução PMP' w='49316' x='50000' y='5804'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='178' h='22491' id='29' is-fixed='true' name='Tabela Ind. Atividade' show-title='false' w='98632' x='684' y='44256'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='259' h='32286' id='30' is-fixed='true' name='Evolução GE' w='49316' x='684' y='66747'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='259' h='32286' id='31' is-fixed='true' name='Evolução PME' w='49316' x='50000' y='66747'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{B6D0F3A8-9581-4846-83C4-418E30479F3A}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Endividamento'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='14'>Indicadores de Endividamento</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size maxheight='827' maxwidth='1169' minheight='827' minwidth='1169' preset-index='16' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='22491' id='12' param='vert' type-v2='layout-flow' w='98632' x='684' y='44256'>
+            <zone h='22491' id='10' type-v2='layout-basic' w='98632' x='684' y='44256'>
+              <zone h='22491' id='22' name='Tabela Ind. Endividamento' show-title='false' w='98632' x='684' y='44256'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='38452' id='18' name='Evolução EAT' w='49316' x='684' y='5804'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='38452' id='19' name='Evolução ICJ' w='49316' x='50000' y='5804'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='32286' id='20' name='Evolução E/D' w='49316' x='684' y='66747'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='32286' id='21' name='Evolução ELP/AT' w='49316' x='50000' y='66747'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='4837' id='13' type-v2='title' w='98632' x='684' y='967'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontsize='14'>Indicadores de Endividamento</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='1400' minheight='1400' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='30' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98066' id='29' param='vert' type-v2='layout-flow' w='98632' x='684' y='967'>
+                <zone h='4837' id='13' type-v2='title' w='98632' x='684' y='967'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='38452' id='18' is-fixed='true' name='Evolução EAT' w='49316' x='684' y='5804'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='38452' id='19' is-fixed='true' name='Evolução ICJ' w='49316' x='50000' y='5804'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='178' h='22491' id='22' is-fixed='true' name='Tabela Ind. Endividamento' show-title='false' w='98632' x='684' y='44256'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='259' h='32286' id='20' is-fixed='true' name='Evolução E/D' w='49316' x='684' y='66747'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='259' h='32286' id='21' is-fixed='true' name='Evolução ELP/AT' w='49316' x='50000' y='66747'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{4E28DFF5-E07A-4AB9-8CC0-69FFCB0F39E7}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Fleuriet'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='14'>Indicadores de Liquidez</run>
+            <run fontalignment='1'>Æ&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size maxheight='827' maxwidth='1169' minheight='827' minwidth='1169' preset-index='16' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='17171' id='12' param='vert' type-v2='layout-flow' w='98632' x='684' y='44740'>
+            <zone h='17171' id='10' type-v2='layout-basic' w='98632' x='684' y='44740'>
+              <zone h='17171' id='39' name='Tabela Ind. Fleuriet' show-title='false' w='98632' x='684' y='44740'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='4837' id='13' type-v2='title' w='98632' x='684' y='967'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='37122' id='34' name='Evolução ILS' w='98632' x='684' y='61911'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='38936' id='35' name='Evolução ILC' w='98632' x='684' y='5804'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontsize='14'>Indicadores de Liquidez</run>
+                <run fontalignment='1'>Æ&#10;</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='750' minheight='750' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='38' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98066' id='37' param='vert' type-v2='layout-flow' w='98632' x='684' y='967'>
+                <zone h='4837' id='13' type-v2='title' w='98632' x='684' y='967'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='42443' id='35' is-fixed='true' name='Evolução ILC' w='98632' x='684' y='5804'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='39057' id='34' is-fixed='true' name='Evolução ILS' w='98632' x='684' y='59976'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{8EF314A9-1BC4-4B5C-9592-F9C3F5B5AF57}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Liquidez'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='14'>Indicadores de Liquidez</run>
+            <run fontalignment='1'>Æ&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size maxheight='827' maxwidth='1169' minheight='827' minwidth='1169' preset-index='16' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='11729' id='12' param='vert' type-v2='layout-flow' w='98632' x='684' y='48247'>
+            <zone h='11729' id='10' type-v2='layout-basic' w='98632' x='684' y='48247'>
+              <zone h='11729' id='36' name='Tabela Ind. Liquidez' show-title='false' w='98632' x='684' y='48247'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='4837' id='13' type-v2='title' w='98632' x='684' y='967'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='39057' id='34' name='Evolução ILS' w='98632' x='684' y='59976'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='42443' id='35' name='Evolução ILC' w='98632' x='684' y='5804'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontsize='14'>Indicadores de Liquidez</run>
+                <run fontalignment='1'>Æ&#10;</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='750' minheight='750' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='38' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98066' id='37' param='vert' type-v2='layout-flow' w='98632' x='684' y='967'>
+                <zone h='4837' id='13' type-v2='title' w='98632' x='684' y='967'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='42443' id='35' is-fixed='true' name='Evolução ILC' w='98632' x='684' y='5804'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='89' h='11729' id='36' is-fixed='true' name='Tabela Ind. Liquidez' show-title='false' w='98632' x='684' y='48247'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='39057' id='34' is-fixed='true' name='Evolução ILS' w='98632' x='684' y='59976'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{47AE3E3D-9470-45CD-8A93-55553241F129}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Rentabilidade'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='14'>Indicadores de Rentabilidade</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size maxheight='827' maxwidth='1169' minheight='827' minwidth='1169' preset-index='16' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98066' id='12' param='vert' type-v2='layout-flow' w='98632' x='684' y='967'>
+            <zone h='5683' id='13' type-v2='title' w='98632' x='684' y='967'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='92383' id='10' type-v2='layout-basic' w='98632' x='684' y='6650'>
+              <zone h='39639' id='5' name='Evolução MLO' w='31010' x='684' y='6650'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='39639' id='6' name='Evolução MLL' w='34988' x='64328' y='6650'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='19594' id='7' name='Tabela Ind. Rentabilidade' show-title='false' w='98632' x='684' y='46289'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='33150' id='8' name='Evolução ROI' w='49316' x='684' y='65883'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='33150' id='9' name='Evolução ROE' w='49316' x='50000' y='65883'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='39639' id='3' name='Evolução MLB' w='32634' x='31694' y='6650'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontsize='14'>Indicadores de Rentabilidade</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='1650' minheight='1650' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='25' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98066' id='24' param='vert' type-v2='layout-flow' w='98632' x='684' y='967'>
+                <zone h='5683' id='13' type-v2='title' w='98632' x='684' y='967'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='39639' id='5' is-fixed='true' name='Evolução MLO' w='31010' x='684' y='6650'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='39639' id='3' is-fixed='true' name='Evolução MLB' w='32634' x='31694' y='6650'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='39639' id='6' is-fixed='true' name='Evolução MLL' w='34988' x='64328' y='6650'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='154' h='19594' id='7' is-fixed='true' name='Tabela Ind. Rentabilidade' show-title='false' w='98632' x='684' y='46289'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='266' h='33150' id='8' is-fixed='true' name='Evolução ROI' w='49316' x='684' y='65883'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='266' h='33150' id='9' is-fixed='true' name='Evolução ROE' w='49316' x='50000' y='65883'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{DBFEF4DA-5F7A-4847-B26E-BC2E7B38FA27}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.5' source-height='44'>
+    <window class='dashboard' name='Rentabilidade'>
+      <viewpoints>
+        <viewpoint name='Evolução MLB'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='Evolução MLL'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='Evolução MLO'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='Evolução ROE'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='Evolução ROI'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='Tabela Ind. Rentabilidade'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='5' />
+      <simple-id uuid='{740521AC-3EC8-4F52-886F-E6942918E20E}' />
+    </window>
+    <window class='dashboard' name='Endividamento'>
+      <viewpoints>
+        <viewpoint name='Evolução E/D'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Evolução EAT'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Evolução ELP/AT'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Evolução ICJ'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Tabela Ind. Endividamento'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='18' />
+      <simple-id uuid='{43283C08-F80C-4132-A9C0-EBC1CAC26997}' />
+    </window>
+    <window class='dashboard' name='Atividade'>
+      <viewpoints>
+        <viewpoint name='Evolução GE'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Evolução PMC'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Evolução PME'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Evolução PMP'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Tabela Ind. Atividade'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{01B75100-D0C5-48A2-8C7F-5E59C046B5B2}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Liquidez'>
+      <viewpoints>
+        <viewpoint name='Evolução ILC'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Evolução ILS'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Tabela Ind. Liquidez'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{E98FD754-826F-4D48-8BF5-327CBB70CE11}' />
+    </window>
+    <window class='worksheet' name='Tabela Ind. Fleuriet'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{262F7DBB-E003-4B18-9BEE-777F63FFB80D}' />
+    </window>
+    <window class='worksheet' name='Evolução CDG'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{EF861A23-E612-4121-A71B-339DDF6C642A}' />
+    </window>
+    <window class='worksheet' name='Evolução NCG'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0D54DE40-E345-4590-887B-35521A9D8A99}' />
+    </window>
+    <window class='worksheet' name='Evolução T'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4ECCC4D7-CEBF-4883-A262-C39289F62437}' />
+    </window>
+    <window class='dashboard' name='Fleuriet'>
+      <viewpoints>
+        <viewpoint name='Evolução ILC'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Evolução ILS'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Tabela Ind. Fleuriet'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{FEE10311-5810-4BD9-AA46-0D7CEE9E5C43}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Evolução E/D'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{BC51699A-7F7E-4C65-B8E9-1CF349BF226E}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Evolução EAT'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{50A3DB10-32F1-4531-893F-BCEDFEC6BA21}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Evolução ELP/AT'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{22B42D02-130A-474F-A175-52F4D5384D02}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Evolução GE'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{FAC80CF1-48AB-42E2-B126-E6E52ED81C93}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Evolução ICJ'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C5BF716D-EC64-4F94-94DD-A5320D27EE6D}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Evolução ILC'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{2ACDAE9C-EC0E-4832-A76B-E2BE80031FF8}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Evolução ILS'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{ACFAC311-30DC-4A43-8AA8-8EADDC0254AC}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Evolução MLB'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-height' />
+      </viewpoint>
+      <simple-id uuid='{22B805A0-F68D-4A7B-A079-3C181D18692A}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Evolução MLL'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B80C469E-0E03-4509-A680-38E1B038518B}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Evolução MLO'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D53D70DF-6986-4CA1-B889-36CC11F5AD8B}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Evolução PMC'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{42508CBF-A2B8-462A-AE61-11B8A474D5DD}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Evolução PME'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{520CA0D3-7103-407A-9AE2-413C63AF5F92}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Evolução PMP'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{58DBB0A9-64E2-4C65-B9EA-60B548CAC886}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Evolução ROE'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0D0F6F5C-A1CE-45D7-BDFF-3E1B44849496}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Evolução ROI'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{CF36798B-CECD-4ACA-8641-2CB4251F7BBD}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Tabela Ind. Atividade'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{7E63BD52-9553-42E1-99EF-79EE993C1589}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Tabela Ind. Endividamento'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E531A8D6-D2C9-400C-9202-8FCA56B0BEEB}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Tabela Ind. Liquidez'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{34E73191-C638-4D31-AAB9-6606AEE045A5}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Tabela Ind. Rentabilidade'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F1E96FCC-870F-4FBB-BFAF-A78181C6D31D}' />
+    </window>
+  </windows>
+</workbook>
